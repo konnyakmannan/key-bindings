@@ -1,0 +1,5 @@
+xkb_compatibility "caps" {
+  	interpret Caps_Lock+AnyOfOrNone(all) {
+	       action= SetMods(modifiers=Lock);
+	   };
+};

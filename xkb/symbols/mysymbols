@@ -1,0 +1,70 @@
+ xkb_symbols "caps" {
+   key.type= "CUST_CAPSLOCK";
+   
+   key <AD07> {
+          symbols[Group1]= [               u,               U,               Muhenkan],
+          actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<NFER>, clearmods=Lock) ]
+      };
+   key <AD09> {
+          symbols[Group1]= [               o,               O,               Henkan],
+          actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<XFER>, clearmods=Lock) ]
+   };
+
+   key <AD08> {
+       symbols[Group1]= [               i,               I,               Up],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<UP>, clearmods=Lock) ]
+   };
+   key <AC07> {
+       symbols[Group1]= [               j,               J,               Left],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<LEFT>, clearmods=Lock) ]
+   };
+   key <AC08> {
+       symbols[Group1]= [               k,               K,               Down],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DOWN>, clearmods=Lock) ]
+   };
+   key <AC09> {
+       symbols[Group1]= [               l,               L,               Right],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<RGHT>, clearmods=Lock) ]
+   };
+
+   key <AC01> {
+       symbols[Group1]= [               a,               A,               Home],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<HOME>, clearmods=Lock) ]
+   };
+   key <AD03> {
+       symbols[Group1]= [               e,               E,               End],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<END>, clearmods=Lock) ]
+   };
+
+   key <AC04> {
+       symbols[Group1]= [               f,               F,               Next],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGDN>, clearmods=Lock) ]
+   };
+   key <AB05> {
+       symbols[Group1]= [               b,               B,               Prior],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<PGUP>, clearmods=Lock) ]
+   };
+
+   key <AB06> {
+       symbols[Group1]= [               n,               N,               Return],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<RTRN>, clearmods=Lock) ]
+   };
+   key <AC05> {
+       symbols[Group1]= [               g,               G,               Escape],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<ESC>, clearmods=Lock) ]
+   };
+
+   key <AC06> {
+       symbols[Group1]= [               h,               H,               BackSpace],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<BKSP>, clearmods=Lock) ]
+   };
+   key <AC03> {
+       symbols[Group1]= [               d,               D,               Delete],
+       actions[Group1]= [      NoAction(),      NoAction(),   RedirectKey(keycode=<DELE>, clearmods=Lock) ]
+   };
+};
+
+xkb_symbols "swapkeys" {
+    replace key <LCTL>  { [ Caps_Lock ] };
+    replace key <CAPS> { [ Control_L ] };
+};
